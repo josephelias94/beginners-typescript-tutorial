@@ -1,10 +1,14 @@
 import { expect, it } from 'vitest';
 
-export const getName = (params: { first: string; last: string }) => {
-  if (params.last) {
-    return `${params.first} ${params.last}`;
-  }
-  return params.first;
+type ParamsType = {
+  first: string;
+  last?: string;
+};
+
+export const getName = (params: ParamsType): string => {
+  if (!params.last) return params.first;
+
+  return `${params.first} ${params.last}`;
 };
 
 it('Should work with just the first name', () => {

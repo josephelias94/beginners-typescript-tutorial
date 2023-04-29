@@ -1,13 +1,19 @@
 import { expect, it } from 'vitest';
 
-const createCache = () => {
-  const cache = {};
+interface CreateCacheType {
+  cache: Record<string, string>;
+  add(id: string, value: string): void;
+  remove(id: string): void;
+}
 
-  const add = (id: string, value: string) => {
+const createCache = (): CreateCacheType => {
+  const cache: CreateCacheType['cache'] = {};
+
+  const add = (id: string, value: string): void => {
     cache[id] = value;
   };
 
-  const remove = (id: string) => {
+  const remove = (id: string): void => {
     delete cache[id];
   };
 

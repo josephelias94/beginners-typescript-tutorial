@@ -16,13 +16,13 @@ interface Post {
  */
 export const getDefaultUserAndPosts = (): unknown => {
   return {
-    id: "1",
-    firstName: "Matt",
-    lastName: "Pocock",
+    id: '1',
+    firstName: 'Matt',
+    lastName: 'Pocock',
     posts: [
       {
-        id: "1",
-        title: "How I eat so much cheese",
+        id: '1',
+        title: 'How I eat so much cheese',
         body: "It's pretty edam difficult",
       },
     ],

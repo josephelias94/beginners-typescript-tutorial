@@ -1,10 +1,10 @@
-import { expect, it } from "vitest";
+import { expect, it } from 'vitest';
 
 export const addTwoNumbers = (params: { first: number; second: number }) => {
   return params.first + params.second;
 };
 
-it("Should add the two numbers together", () => {
+it('Should add the two numbers together', () => {
   expect(
     addTwoNumbers({
       first: 2,

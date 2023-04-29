@@ -1,4 +1,4 @@
-import { expect, it } from "vitest";
+import { expect, it } from 'vitest';
 
 type AddTwoNumbersArgs = {
   first: number;
@@ -9,7 +9,7 @@ export const addTwoNumbers = (params: AddTwoNumbersArgs) => {
   return params.first + params.second;
 };
 
-it("Should add the two numbers together", () => {
+it('Should add the two numbers together', () => {
   expect(
     addTwoNumbers({
       first: 2,

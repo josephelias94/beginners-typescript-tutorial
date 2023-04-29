@@ -11,6 +11,7 @@
     "s": "npm run solution",
     "ci": "(cd scripts/tests && npx vitest run)",
     "update-snapshots": "(cd scripts/tests && npx vitest run -u)",
+    "lint": "prettier --check --write .",
     "prepare": "node scripts/prepare-stackblitz.js",
     "e-01": "npm run exercise -- 01",
     "s-01": "npm run solution -- 01",
@@ -61,6 +62,7 @@
     "cross-env": "^7.0.3",
     "cross-fetch": "^3.1.5",
     "jsdom": "^21.1.1",
+    "prettier": "^2.8.8",
     "typescript": "^5.0.4",
     "vite-tsconfig-paths": "^4.2.0",
     "vitest": "^0.30.1"
